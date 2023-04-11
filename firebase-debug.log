@@ -1,0 +1,40 @@
+[debug] [2023-04-11T13:35:57.776Z] ----------------------------------------------------------------------
+[debug] [2023-04-11T13:35:57.780Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hadi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-04-11T13:35:57.781Z] CLI Version:   11.25.3
+[debug] [2023-04-11T13:35:57.781Z] Platform:      win32
+[debug] [2023-04-11T13:35:57.781Z] Node Version:  v16.17.1
+[debug] [2023-04-11T13:35:57.782Z] Time:          Tue Apr 11 2023 16:35:57 GMT+0300 (Eastern European Summer Time)
+[debug] [2023-04-11T13:35:57.783Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-11T13:35:57.790Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-04-11T13:35:57.827Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-11T13:35:57.828Z] > authorizing via signed-in user (enstein.alber@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\hadi\Downloads\ToDoList\todo
+
+[warn] !  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2023-04-11T13:35:58.033Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-04-11T13:37:58.257Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-04-11T13:38:00.142Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 403
+[debug] [2023-04-11T13:38:00.142Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2023-04-11T13:38:00.143Z] Unable to parse JSON: SyntaxError: Unexpected token < in JSON at position 0
+[debug] [2023-04-11T13:38:00.494Z] FirebaseError: Unable to parse JSON: SyntaxError: Unexpected token < in JSON at position 0
+    at RetryOperation._fn (C:\Users\hadi\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:260:39)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
